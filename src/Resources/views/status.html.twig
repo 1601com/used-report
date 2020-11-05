@@ -1,0 +1,11 @@
+<!-- status.html.twig -->
+
+{% if result is not empty %}
+    <div class="image-status-green">
+        {% include '@UsedReport/table.html.twig' with {'result': result} %}
+    </div>
+{% else %}
+    <div class="image-status-red">
+        Could not find any reference for the given image in the database or files: Image may not be in use.
+    </div>
+{% endif %}

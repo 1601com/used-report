@@ -1,0 +1,9 @@
+agentur1601com_used_report_show_ajax_requests:
+  path: /contao/used-report/ajax-request
+  methods: POST
+  defaults:
+    _controller: Agentur1601com\UsedReport\Controller\ShowAjaxController::ajaxRequest
+    _scope: backend
+    _token_check: true
+    _custom_backend_view: true
+

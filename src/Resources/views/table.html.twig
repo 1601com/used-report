@@ -1,0 +1,54 @@
+<!-- table.html.twig -->
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Quick-Link</th>
+        <th>View</th>
+    </tr>
+    {% for res in result %}
+    {% if res.entryType is same as('database') %}
+    <tr>
+        <td>
+            {{ res.entryId }}
+        </td>
+        <td>
+            <a href="/contao?do={{ res.doElement }}&table={{ res.tableName }}&id={{ res.entryId }}&act=edit&rt={{ requestToken }}" target="_blank">Edit</a>
+        </td>
+            <td>
+            {% if (res.parentData.isModule is same as(true)) %}
+                is module
+            {% elseif (res.parentData.previewUrlFragment is not null) and (res.parentData.previewId is not null) and (res.parentData.previewPublished is same as(true)) %}
+                <a href="{{ previewRoute }}?{{ res.parentData.previewUrlFragment }}={{ res.parentData.previewId }}">See</a>
+            {% else %}
+                not published
+            {% endif %}
+            </td>
+    </tr>
+    {% elseif res.entryType is same as('file') %}
+        <tr>
+            <td>
+                x
+            </td>
+            <td>
+                {{ res.insertTagTemplate }}
+            </td>
+            <td>
+                is insertTag
+            </td>
+        </tr>
+    {% else %}
+        <tr>
+            <td>
+                x
+            </td>
+            <td>
+                {{ res.styleSheetUsingImage }}
+            </td>
+            <td>
+                is stylesheet
+            </td>
+        </tr>
+    {% endif %}
+    {% endfor %}
+</table>

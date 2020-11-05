@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table a {
+    color: green;
+    text-decoration: underline;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eaeaec;
+}
+
+.tl_file div .image-status-red {
+    background: url('../images/ur_criss_cross.svg') no-repeat right center;
+    margin-top: 18px;
+    height: auto;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+div .image-status-green {
+    margin-top: 20px;
+    height: auto;
+    font-size: 13px;
+}
+
+div .tl_right {
+    text-align: right;
+}
+
+.ur_sync {
+    background-image: url('../images/ur_sync.svg');
+    padding: 3px 0 3px 21px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
