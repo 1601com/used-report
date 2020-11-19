@@ -19,11 +19,14 @@ tr:nth-child(even) {
 }
 
 .tl_file div .image-status-red {
-    background: url('../images/ur_criss_cross.svg') no-repeat right center;
-    margin-top: 18px;
+    background: url('../images/ur_criss_cross.svg') no-repeat right 0 top 2px;
+    background-size: 16px;
+    margin-top: 10px;
     height: auto;
     font-size: 15px;
-    padding-right: 20px;
+    padding-right: 22px;
+    line-height: 1.2;
+    white-space: normal;
 }
 
 div .image-status-green {
@@ -34,6 +37,7 @@ div .image-status-green {
 
 div .tl_right {
     text-align: right;
+    max-width: 50%;
 }
 
 .ur_sync {

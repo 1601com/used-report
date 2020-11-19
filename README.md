@@ -18,4 +18,10 @@ This value can be set in the "Used-Report" entry point in your backend.
 
 ###### Please Note
 The extension is still not fully developed yet and may not get all the used images.   
-Only delete images if you are confident that they are not in use.
+It will mostly find images used in core elements.  
+
+For example:
+- The extension can find images used in content, article, news, event, .. - elements   
+- The extension can not find images used in extensions like metamodels. 
+
+**Only delete images if you are confident that they are not in use!**
