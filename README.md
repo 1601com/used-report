@@ -1,4 +1,5 @@
 <a href="https://www.1601.com" ><img align="right" src="https://user-images.githubusercontent.com/40162179/98120299-14f9f380-1eae-11eb-912e-96d7ecaeebcb.png" width="100" /></a>
+[![Latest Stable Version](http://poser.pugx.org/agentur1601com/used-report/v)](https://packagist.org/packages/agentur1601com/used-report) [![Total Downloads](http://poser.pugx.org/agentur1601com/used-report/downloads)](https://packagist.org/packages/agentur1601com/used-report)  [![License](http://poser.pugx.org/agentur1601com/used-report/license)](https://packagist.org/packages/agentur1601com/used-report)
 <br>
 ## Used-Report-Bundle
 The purpose of this extension is to provide an overview for the usage of images in your Contao-System.   
